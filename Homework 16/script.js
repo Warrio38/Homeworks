@@ -42,20 +42,16 @@ personJohn2.sayHello();
 sysAdmin2.sayHello();
 clientNatalia2.sayHello();
 function Student(name, marks){
-  this.student = function(){
-      const objStudent = {
-      name: name,
-      marks: marks,
-      averageMark: function(){
-        const result = this.marks.reduce((number, currentValue) => number + currentValue) / this.marks.length;
-        return result
-      }
-    }
-    return objStudent
+  this.name = name;
+  this.marks = marks;
+  this.averageMark = function(){
+    let sum = this.marks.reduce((number, currentValue) => number + currentValue)
+    let result = sum / this.marks.length
+    return result
   }
 };
 const students = [
   new Student("Student 1", [10, 9, 8, 0, 10]), // имя, оценки
   new Student("Student 12", [10, 0, 8, 0, 3, 4]),
 ];
-console.log(students[0].student().averageMark());
+console.log(students[0].averageMark());
