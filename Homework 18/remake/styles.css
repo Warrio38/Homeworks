@@ -1,0 +1,29 @@
+body{
+    background-image: url(./bj.jpg);
+    font-size: 30px;
+}
+.inp{
+    margin-left: 40%;
+    width: 20%;
+    height: 30px;
+    color: dimgrey;
+    background-color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+}
+.text{
+    text-align: center;
+    color: white;
+    text-shadow: gray;
+}
+.div{
+    background-color: royalblue;
+    margin-left: 40.1%;
+    margin-top: 30px;
+    width: 20.2%;
+    height: 35px;
+    text-align: center;
+}
+.skip{
+    display: none;
+}
