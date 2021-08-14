@@ -1,0 +1,42 @@
+
+.background{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-family: arial, sans-serif;
+    font-size: 35px;
+    background: url(./Room2.png) center/cover no-repeat;
+    width: 100%;
+    height: 98.3vh;
+    overflow: hidden;
+}
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-right: 20%;
+    height: 200px;
+    width: 200px;
+    background: url(./calendar.png) center/contain no-repeat;
+    align-items: center;
+    font-size: 30px;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    width: 300px;
+    background: url(./clocks.png) center/contain no-repeat;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 300px;
+    width: 600px;
+    background: url(./stol.png) center/cover no-repeat;
+}
