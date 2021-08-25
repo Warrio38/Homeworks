@@ -1,0 +1,27 @@
+body{
+    background-image: url(./bj.jpg);
+    text-align: center;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+.unConfirmed{
+    background-color: tomato;
+}
+.confirmed{
+    background-color: yellowgreen;
+}
+table{
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    color: white;
+    border: 4px solid white;
+}
+button{
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    margin-left: 1%;
+    width: 10%;
+    font-size: xx-large;
+}
