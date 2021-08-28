@@ -1,0 +1,14 @@
+body{
+    background-image: url(./bj.jpg);
+    text-align: center;
+    font-size: xx-large;
+    color: whitesmoke
+}
+input{
+    font-size: xx-large;
+}
+button{
+    font-size: xx-large;
+    background-color: royalblue;
+    color: whitesmoke;
+}
