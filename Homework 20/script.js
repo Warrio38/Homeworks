@@ -1,15 +1,8 @@
-let table = document.createElement("table");
-let titleTr = document.createElement("tr");
-let titlePrice = document.createElement("td");
-let titleName = document.createElement("td");
-titlePrice.append("Цена");
-titleName.append("Название ");
-titleTr.append(titleName);
-titleTr.append(titlePrice);
-table.append(titleTr);
+let table = document.getElementById('table')
 document.body.append(table);
 let tr;
 let td;
+let button;
 let sum = 0;
 let name;
 let price;
@@ -19,7 +12,6 @@ div.append(`Общая цена: ${sum}`);
 document.body.append(div);
 function add() {
   let name = document.getElementById("name").value;
-  console.log(name);
   let price = parseFloat(document.getElementById("price").value);
   if (name !== "" && !isNaN(price)) {
     td = document.createElement("td");
@@ -30,9 +22,19 @@ function add() {
     td = document.createElement("td");
     td.append(price);
     tr.append(td);
+    td = document.createElement("td");
+    button1 = document.createElement('button');
+    button1.append('Удалить')
+    td.append(button1)
+    tr.append(td)
+    table.append(tr)
+    button1.addEventListener('click', remover)
     sum = Number(sum) + Number(price);
     div.textContent = `Общая цена: ${sum}`;
   } else {
     alert("Вы ввели неправильные данные!");
   }
+}
+function remover(){
+  console.log(event.target.outer)
 }
